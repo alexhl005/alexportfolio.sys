@@ -91,85 +91,189 @@
         </div>
     </section>
 
-    <!-- Skills Section - Grouped -->
+    <!-- Skills Section - Expandable Cards -->
 <section id="skills" class="py-16 bg-gray-900">
     <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold mb-12 text-center">Habilidades Técnicas</h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            <!-- Grupo 1: Sistemas -->
-            <div class="skill-group">
-                <h3 class="skill-group-title">Sistemas</h3>
-                <div class="skill-group-icons">
-                    <div class="skill-icon">
-                        <img src="assets/images/linux.svg" alt="Linux" title="Linux">
+        <!-- Primera fila de 4 cuadros -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+            <!-- Cuadro 1: Sistemas -->
+            <div class="skill-card" onclick="toggleSkillDetails(1)">
+                <div class="skill-card-content">
+                    <h3 class="skill-card-title">Sistemas</h3>
+                    <div class="skill-icons">
+                        <img src="assets/images/linux.svg" alt="Linux">
+                        <img src="assets/images/windows.svg" alt="Windows">
+                        <img src="assets/images/proxmox.svg" alt="Proxmox">
+                        <img src="assets/images/synology.svg" alt="Synology">
                     </div>
-                    <div class="skill-icon">
-                        <img src="assets/images/windows.svg" alt="Windows Server" title="Windows Server">
-                    </div>
-                    <div class="skill-icon">
-                        <img src="assets/images/proxmox.svg" alt="Proxmox" title="Proxmox">
-                    </div>
-                    <div class="skill-icon">
-                        <img src="assets/images/synology.svg" alt="Synology" title="Synology">
-                    </div>
+                </div>
+                <div class="skill-details hidden">
+                    <p class="mb-2"><strong>Administración avanzada de:</strong></p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Sistemas Linux/Windows</li>
+                        <li>Virtualización con Proxmox</li>
+                        <li>Almacenamiento NAS Synology</li>
+                        <li>Servidores físicos y virtuales</li>
+                    </ul>
                 </div>
             </div>
             
-            <!-- Grupo 2: Cloud -->
-            <div class="skill-group">
-                <h3 class="skill-group-title">Cloud</h3>
-                <div class="skill-group-icons">
-                    <div class="skill-icon">
-                        <img src="assets/images/aws.svg" alt="AWS" title="AWS">
+            <!-- Cuadro 2: Redes -->
+            <div class="skill-card" onclick="toggleSkillDetails(2)">
+                <div class="skill-card-content">
+                    <h3 class="skill-card-title">Redes</h3>
+                    <div class="skill-icons">
+                        <img src="assets/images/cisco.svg" alt="Cisco">
+                        <img src="assets/images/mikrotik.svg" alt="MikroTik">
+                        <img src="assets/images/pfsense.svg" alt="pfSense">
+                        <img src="assets/images/wireguard.svg" alt="WireGuard">
                     </div>
-                    <div class="skill-icon">
-                        <img src="assets/images/docker.svg" alt="Docker" title="Docker">
-                    </div>
-                    <div class="skill-icon">
-                        <img src="assets/images/kubernetes.svg" alt="Kubernetes" title="Kubernetes">
-                    </div>
-                    <div class="skill-icon">
-                        <img src="assets/images/azure.svg" alt="Azure" title="Azure">
-                    </div>
+                </div>
+                <div class="skill-details hidden">
+                    <p class="mb-2"><strong>Configuración y gestión de:</strong></p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Equipos Cisco y MikroTik</li>
+                        <li>Firewalls pfSense</li>
+                        <li>VPNs (WireGuard, OpenVPN)</li>
+                        <li>Redes LAN/WAN</li>
+                    </ul>
                 </div>
             </div>
             
-            <!-- Grupo 3: Automatización -->
-            <div class="skill-group">
-                <h3 class="skill-group-title">Automatización</h3>
-                <div class="skill-group-icons">
-                    <div class="skill-icon">
-                        <img src="assets/images/terraform.svg" alt="Terraform" title="Terraform">
+            <!-- Cuadro 3: Cloud -->
+            <div class="skill-card" onclick="toggleSkillDetails(3)">
+                <div class="skill-card-content">
+                    <h3 class="skill-card-title">Cloud</h3>
+                    <div class="skill-icons">
+                        <img src="assets/images/aws.svg" alt="AWS">
+                        <img src="assets/images/azure.svg" alt="Azure">
+                        <img src="assets/images/docker.svg" alt="Docker">
+                        <img src="assets/images/kubernetes.svg" alt="Kubernetes">
                     </div>
-                    <div class="skill-icon">
-                        <img src="assets/images/ansible.svg" alt="Ansible" title="Ansible">
-                    </div>
-                    <div class="skill-icon">
-                        <img src="assets/images/jenkins.svg" alt="Jenkins" title="Jenkins">
-                    </div>
-                    <div class="skill-icon">
-                        <img src="assets/images/ghwf.svg" alt="GitHub Actions" title="GitHub Actions">
-                    </div>
+                </div>
+                <div class="skill-details hidden">
+                    <p class="mb-2"><strong>Experiencia en:</strong></p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Infraestructura AWS y Azure</li>
+                        <li>Contenedores Docker</li>
+                        <li>Orquestación con Kubernetes</li>
+                        <li>Arquitecturas cloud-native</li>
+                    </ul>
                 </div>
             </div>
             
-            <!-- Grupo 4: Desarrollo -->
-            <div class="skill-group">
-                <h3 class="skill-group-title">Desarrollo</h3>
-                <div class="skill-group-icons">
-                    <div class="skill-icon">
-                        <img src="assets/images/python.svg" alt="Python" title="Python">
+            <!-- Cuadro 4: Automatización -->
+            <div class="skill-card" onclick="toggleSkillDetails(4)">
+                <div class="skill-card-content">
+                    <h3 class="skill-card-title">Automatización</h3>
+                    <div class="skill-icons">
+                        <img src="assets/images/terraform.svg" alt="Terraform">
+                        <img src="assets/images/ansible.svg" alt="Ansible">
+                        <img src="assets/images/jenkins.svg" alt="Jenkins">
+                        <img src="assets/images/ghwf.svg" alt="GitHub Actions">
                     </div>
-                    <div class="skill-icon">
-                        <img src="assets/images/bash.svg" alt="Bash" title="Bash Scripting">
+                </div>
+                <div class="skill-details hidden">
+                    <p class="mb-2"><strong>Dominio de:</strong></p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Infraestructura como código (Terraform)</li>
+                        <li>Configuración automatizada (Ansible)</li>
+                        <li>CI/CD (Jenkins, GitHub Actions)</li>
+                        <li>Scripting para automatización</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Segunda fila de 4 cuadros -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Cuadro 5: Bases de Datos -->
+            <div class="skill-card" onclick="toggleSkillDetails(5)">
+                <div class="skill-card-content">
+                    <h3 class="skill-card-title">Bases de Datos</h3>
+                    <div class="skill-icons">
+                        <img src="assets/images/mysql.svg" alt="MySQL">
+                        <img src="assets/images/postgre.svg" alt="PostgreSQL">
+                        <img src="assets/images/oracle.svg" alt="Oracle">
+                        <img src="assets/images/mariadb.svg" alt="MariaDB">
                     </div>
-                    <div class="skill-icon">
-                        <img src="assets/images/php.svg" alt="PHP" title="PHP">
+                </div>
+                <div class="skill-details hidden">
+                    <p class="mb-2"><strong>Administración de:</strong></p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Bases de datos relacionales</li>
+                        <li>Optimización de consultas</li>
+                        <li>Backup y recuperación</li>
+                        <li>Replicación y clustering</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Cuadro 6: Monitorización -->
+            <div class="skill-card" onclick="toggleSkillDetails(6)">
+                <div class="skill-card-content">
+                    <h3 class="skill-card-title">Monitorización</h3>
+                    <div class="skill-icons">
+                        <img src="assets/images/zabbix.svg" alt="Zabbix">
+                        <img src="assets/images/prometheus.svg" alt="Prometheus">
+                        <img src="assets/images/grafana.svg" alt="Grafana">
+                        <img src="assets/images/nagios.svg" alt="Nagios">
                     </div>
-                    <div class="skill-icon">
-                        <img src="assets/images/js.svg" alt="JavaScript" title="JavaScript">
+                </div>
+                <div class="skill-details hidden">
+                    <p class="mb-2"><strong>Implementación de:</strong></p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Soluciones de monitorización</li>
+                        <li>Alertas y notificaciones</li>
+                        <li>Dashboards personalizados</li>
+                        <li>Análisis de métricas</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Cuadro 7: Desarrollo -->
+            <div class="skill-card" onclick="toggleSkillDetails(7)">
+                <div class="skill-card-content">
+                    <h3 class="skill-card-title">Desarrollo</h3>
+                    <div class="skill-icons">
+                        <img src="assets/images/python.svg" alt="Python">
+                        <img src="assets/images/bash.svg" alt="Bash">
+                        <img src="assets/images/php.svg" alt="PHP">
+                        <img src="assets/images/js.svg" alt="JavaScript">
                     </div>
+                </div>
+                <div class="skill-details hidden">
+                    <p class="mb-2"><strong>Desarrollo con:</strong></p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Python para automatización</li>
+                        <li>Bash/PowerShell para scripting</li>
+                        <li>PHP para aplicaciones web</li>
+                        <li>JavaScript para frontend</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Cuadro 8: Web -->
+            <div class="skill-card" onclick="toggleSkillDetails(8)">
+                <div class="skill-card-content">
+                    <h3 class="skill-card-title">Servicios Web</h3>
+                    <div class="skill-icons">
+                        <img src="assets/images/apache.svg" alt="Apache">
+                        <img src="assets/images/nginx.svg" alt="Nginx">
+                        <img src="assets/images/wp.svg" alt="WordPress">
+                        <img src="assets/images/nc.svg" alt="Nextcloud">
+                    </div>
+                </div>
+                <div class="skill-details hidden">
+                    <p class="mb-2"><strong>Gestión de:</strong></p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Servidores web Apache/Nginx</li>
+                        <li>CMS como WordPress</li>
+                        <li>Plataformas colaborativas</li>
+                        <li>Balanceo de carga y proxies</li>
+                    </ul>
                 </div>
             </div>
         </div>
