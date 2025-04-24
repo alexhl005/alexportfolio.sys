@@ -110,3 +110,44 @@ document.getElementById('show-more-skills').addEventListener('click', function()
     
     this.appendChild(buttonIcon);
 });
+
+// Toggle skill details
+function toggleSkillDetails(cardNumber) {
+    const skillCard = document.querySelectorAll('.skill-card')[cardNumber - 1];
+    const skillDetails = skillCard.querySelector('.skill-details');
+    const allSkillDetails = document.querySelectorAll('.skill-details');
+    
+    // Cerrar todos los demás detalles primero
+    allSkillDetails.forEach(detail => {
+        if (detail !== skillDetails && detail.classList.contains('active')) {
+            detail.classList.remove('active');
+            detail.classList.add('hidden');
+        }
+    });
+    
+    // Alternar el estado del elemento clickeado
+    skillDetails.classList.toggle('active');
+    skillDetails.classList.toggle('hidden');
+    
+    // Asegurarse de que solo un cuadro esté expandido a la vez
+    document.querySelectorAll('.skill-card').forEach(card => {
+        if (card !== skillCard) {
+            card.style.zIndex = '1';
+        } else {
+            card.style.zIndex = skillDetails.classList.contains('active') ? '10' : '1';
+        }
+    });
+}
+
+// Cerrar detalles al hacer clic fuera
+document.addEventListener('click', function(event) {
+    if (!event.target.closest('.skill-card')) {
+        document.querySelectorAll('.skill-details').forEach(detail => {
+            detail.classList.remove('active');
+            detail.classList.add('hidden');
+        });
+        document.querySelectorAll('.skill-card').forEach(card => {
+            card.style.zIndex = '1';
+        });
+    }
+});
