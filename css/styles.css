@@ -177,3 +177,37 @@ body {
     color: #60a5fa;
     text-decoration: underline;
 }
+
+/* Compact Skills Styles */
+.compact-skill {
+    background-color: #2d3748;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: calc(25% - 1rem);
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.compact-skill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #374151;
+}
+
+.skill-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .compact-skill {
+        width: calc(50% - 1rem);
+    }
+}
