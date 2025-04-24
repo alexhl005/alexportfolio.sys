@@ -90,3 +90,23 @@ document.addEventListener('DOMContentLoaded', function() {
         yearElement.textContent = year;
     }
 });
+
+// Toggle additional skills
+document.getElementById('show-more-skills').addEventListener('click', function() {
+    const moreSkills = document.getElementById('more-skills');
+    const buttonIcon = this.querySelector('i');
+    
+    moreSkills.classList.toggle('hidden');
+    
+    if (moreSkills.classList.contains('hidden')) {
+        buttonIcon.classList.remove('fa-chevron-up');
+        buttonIcon.classList.add('fa-chevron-down');
+        this.textContent = 'Mostrar más habilidades ';
+    } else {
+        buttonIcon.classList.remove('fa-chevron-down');
+        buttonIcon.classList.add('fa-chevron-up');
+        this.textContent = 'Mostrar menos habilidades ';
+    }
+    
+    this.appendChild(buttonIcon);
+});
