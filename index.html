@@ -91,200 +91,94 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-16 bg-gray-900">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-12 text-center">Habilidades Técnicas</h2>
-
-            <!-- Sistemas Operativos -->
-            <div class="mb-12">
-                <h3 class="text-2xl font-semibold mb-6 text-blue-400">Sistemas Operativos</h3>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div class="skill-card">
-                        <img src="assets/images/linux.svg" alt="Linux" class="h-12 mx-auto mb-2">
-                        <p>Linux</p>
-                    </div>
-                    <div class="skill-card">
-                        <img src="assets/images/windows.svg" alt="Windows Server" class="h-12 mx-auto mb-2">
-                        <p>Windows Server</p>
-                    </div>
-                    <div class="skill-card">
-                        <img src="assets/images/azure.svg" alt="Azure" class="h-12 mx-auto mb-2">
-                        <p>Azure AD</p>
-                    </div>
-                    <div class="skill-card">
-                        <img src="assets/images/synology.svg" alt="Synology" class="h-12 mx-auto mb-2 "">
-                        <p>Synology</p>
-                    </div>
+    <!-- Skills Section Compact -->
+<section id="skills" class="py-16 bg-gray-900">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-12 text-center">Habilidades Técnicas</h2>
+        
+        <!-- Primera línea de habilidades -->
+        <div class="flex flex-wrap justify-center gap-4 mb-6 max-w-3xl mx-auto">
+            <!-- Linux -->
+            <div class="compact-skill">
+                <div class="skill-icon">
+                    <img src="assets/images/linux.svg" alt="Linux" class="h-8">
                 </div>
+                <span>Linux</span>
             </div>
-
-            <!-- Servicios de Red -->
-            <div class=" mb-12">
-                        <h3 class="text-2xl font-semibold mb-6 text-blue-400">Servicios de Red</h3>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div class="skill-card">
-                                <img src="assets/images/dhcp.svg" alt="DHCP" class="h-12 mx-auto mb-2 bg-white"
-                                    id="vector-manual">
-                                <p>DHCP</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/dns.svg" alt="DNS" class="h-12 mx-auto mb-2 bg-white"
-                                    id="vector-manual">
-                                <p>DNS</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/wireguard.svg" alt="WireGuard" class="h-12 mx-auto mb-2">
-                                <p>WireGuard</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/xmpp.svg" alt="XMPP" class="h-12 mx-auto mb-2">
-                                <p>XMPP</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Servicios WEBS -->
-                    <div class=" mb-12">
-                        <h3 class="text-2xl font-semibold mb-6 text-blue-400">Servicios Webs</h3>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div class="skill-card">
-                                <img src="assets/images/apache.svg" alt="Apache" class="h-12 mx-auto mb-2">
-                                <p>Apache</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/nginx.svg" alt="Nginx" class="h-12 mx-auto mb-2">
-                                <p>Nginx</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/wp.svg" alt="Wordpress" class="h-12 mx-auto mb-2">
-                                <p>Wordpress</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/nc.svg" alt="NextCloud" class="h-12 mx-auto mb-2">
-                                <p>NextCloud</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Gestion de base de datos -->
-                    <div class=" mb-12">
-                        <h3 class="text-2xl font-semibold mb-6 text-blue-400">Base de datos</h3>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div class="skill-card">
-                                <img src="assets/images/mysql.svg" alt="MySql" class="h-12 mx-auto mb-2">
-                                <p>MySql</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/mariadb.svg" alt="MariaDB" class="h-12 mx-auto mb-2">
-                                <p>MariaDB</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/postgre.svg" alt="PostgreSQL" class="h-12 mx-auto mb-2">
-                                <p>PostgreSQL</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/oracle.svg" alt="Oracle" class="h-12 mx-auto mb-2">
-                                <p>Oracle</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Lenguajes de Programación -->
-                    <div class="mb-12">
-                        <h3 class="text-2xl font-semibold mb-6 text-blue-400">Lenguajes de Programación</h3>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div class="skill-card">
-                                <img src="assets/images/python.svg" alt="Python" class="h-12 mx-auto mb-2">
-                                <p>Python</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/php.svg" alt="PHP" class="h-12 mx-auto mb-2">
-                                <p>PHP</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/bash.svg" alt="Bash" class="h-12 mx-auto mb-2">
-                                <p>Bash Script</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/js.svg" alt="JavaScript" class="h-12 mx-auto mb-2">
-                                <p>JavaScript</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Codigo IaC - CI/CD -->
-                    <div class="mb-12">
-                        <h3 class="text-2xl font-semibold mb-6 text-blue-400">Lenguajes IaC - CI/CD</h3>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div class="skill-card">
-                                <img src="assets/images/terraform.svg" alt="Terraform" class="h-12 mx-auto mb-2">
-                                <p>Terraform</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/ansible.svg" alt="Ansible" class="h-12 mx-auto mb-2">
-                                <p>Ansible</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/jenkins.svg" alt="Jenkins" class="h-12 mx-auto mb-2">
-                                <p>Jenkins</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/ghwf.svg" alt="Github-Workflows" class="h-12 mx-auto mb-2">
-                                <p>Github Workflows</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Cloud & Virtualización -->
-                    <div class="mb-12">
-                        <h3 class="text-2xl font-semibold mb-6 text-blue-400">Cloud & Virtualización</h3>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div class="skill-card">
-                                <img src="assets/images/aws.svg" alt="AWS" class="h-12 mx-auto mb-2">
-                                <p>AWS</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/docker.svg" alt="Docker" class="h-12 mx-auto mb-2">
-                                <p>Docker</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/kubernetes.svg" alt="Kubernetes" class="h-12 mx-auto mb-2">
-                                <p>Kubernetes</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/proxmox.svg" alt="Proxmox" class="h-12 mx-auto mb-2">
-                                <p>Proxmox</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Monitorización y seguridad -->
-                    <div class="mb-12">
-                        <h3 class="text-2xl font-semibold mb-6 text-blue-400">Monitorización y Seguridad</h3>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div class="skill-card">
-                                <img src="assets/images/zabbix.svg" alt="Zabbix" class="h-12 mx-auto mb-2"
-                                    id="vector-manual">
-                                <p>Zabbix</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/pfsense.svg" alt="PfSense" class="h-12 mx-auto mb-2 bg-white"
-                                    id="vector-manual">
-                                <p>PfSense</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/grafana.svg" alt="Grafana" class="h-12 mx-auto mb-2">
-                                <p>Grafana</p>
-                            </div>
-                            <div class="skill-card">
-                                <img src="assets/images/prometheus.svg" alt="Prometheus" class="h-12 mx-auto mb-2">
-                                <p>Prometheus</p>
-                            </div>
-                        </div>
-                    </div>
+            
+            <!-- Windows -->
+            <div class="compact-skill">
+                <div class="skill-icon">
+                    <img src="assets/images/windows.svg" alt="Windows" class="h-8">
                 </div>
-    </section>
+                <span>Windows Server</span>
+            </div>
+            
+            <!-- AWS -->
+            <div class="compact-skill">
+                <div class="skill-icon">
+                    <img src="assets/images/aws.svg" alt="AWS" class="h-8">
+                </div>
+                <span>AWS</span>
+            </div>
+            
+            <!-- Docker -->
+            <div class="compact-skill">
+                <div class="skill-icon">
+                    <img src="assets/images/docker.svg" alt="Docker" class="h-8">
+                </div>
+                <span>Docker</span>
+            </div>
+        </div>
+        
+        <!-- Segunda línea de habilidades -->
+        <div class="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
+            <!-- Terraform -->
+            <div class="compact-skill">
+                <div class="skill-icon">
+                    <img src="assets/images/terraform.svg" alt="Terraform" class="h-8">
+                </div>
+                <span>Terraform</span>
+            </div>
+            
+            <!-- Ansible -->
+            <div class="compact-skill">
+                <div class="skill-icon">
+                    <img src="assets/images/ansible.svg" alt="Ansible" class="h-8">
+                </div>
+                <span>Ansible</span>
+            </div>
+            
+            <!-- Python -->
+            <div class="compact-skill">
+                <div class="skill-icon">
+                    <img src="assets/images/python.svg" alt="Python" class="h-8">
+                </div>
+                <span>Python</span>
+            </div>
+            
+            <!-- Kubernetes -->
+            <div class="compact-skill">
+                <div class="skill-icon">
+                    <img src="assets/images/kubernetes.svg" alt="Kubernetes" class="h-8">
+                </div>
+                <span>Kubernetes</span>
+            </div>
+        </div>
+        
+        <!-- Botón para mostrar más -->
+        <div class="text-center mt-8">
+            <button id="show-more-skills" class="text-blue-400 hover:text-blue-300 transition">
+                Mostrar más habilidades <i class="fas fa-chevron-down ml-2"></i>
+            </button>
+        </div>
+        
+        <!-- Habilidades adicionales (ocultas inicialmente) -->
+        <div id="more-skills" class="hidden grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 max-w-3xl mx-auto">
+            <!-- Aquí puedes agregar el resto de tus habilidades -->
+        </div>
+    </div>
+</section>
 
     <!-- New Projects Section -->
 <section id="projects" class="py-16 bg-gray-900">
