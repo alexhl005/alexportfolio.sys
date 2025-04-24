@@ -91,91 +91,87 @@
         </div>
     </section>
 
-    <!-- Skills Section Compact -->
+    <!-- Skills Section - Grouped -->
 <section id="skills" class="py-16 bg-gray-900">
     <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold mb-12 text-center">Habilidades Técnicas</h2>
         
-        <!-- Primera línea de habilidades -->
-        <div class="flex flex-wrap justify-center gap-4 mb-6 max-w-3xl mx-auto">
-            <!-- Linux -->
-            <div class="compact-skill">
-                <div class="skill-icon">
-                    <img src="assets/images/linux.svg" alt="Linux" class="h-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <!-- Grupo 1: Sistemas -->
+            <div class="skill-group">
+                <h3 class="skill-group-title">Sistemas</h3>
+                <div class="skill-group-icons">
+                    <div class="skill-icon">
+                        <img src="assets/images/linux.svg" alt="Linux" title="Linux">
+                    </div>
+                    <div class="skill-icon">
+                        <img src="assets/images/windows.svg" alt="Windows Server" title="Windows Server">
+                    </div>
+                    <div class="skill-icon">
+                        <img src="assets/images/proxmox.svg" alt="Proxmox" title="Proxmox">
+                    </div>
+                    <div class="skill-icon">
+                        <img src="assets/images/synology.svg" alt="Synology" title="Synology">
+                    </div>
                 </div>
-                <span>Linux</span>
             </div>
             
-            <!-- Windows -->
-            <div class="compact-skill">
-                <div class="skill-icon">
-                    <img src="assets/images/windows.svg" alt="Windows" class="h-8">
+            <!-- Grupo 2: Cloud -->
+            <div class="skill-group">
+                <h3 class="skill-group-title">Cloud</h3>
+                <div class="skill-group-icons">
+                    <div class="skill-icon">
+                        <img src="assets/images/aws.svg" alt="AWS" title="AWS">
+                    </div>
+                    <div class="skill-icon">
+                        <img src="assets/images/docker.svg" alt="Docker" title="Docker">
+                    </div>
+                    <div class="skill-icon">
+                        <img src="assets/images/kubernetes.svg" alt="Kubernetes" title="Kubernetes">
+                    </div>
+                    <div class="skill-icon">
+                        <img src="assets/images/azure.svg" alt="Azure" title="Azure">
+                    </div>
                 </div>
-                <span>Windows Server</span>
             </div>
             
-            <!-- AWS -->
-            <div class="compact-skill">
-                <div class="skill-icon">
-                    <img src="assets/images/aws.svg" alt="AWS" class="h-8">
+            <!-- Grupo 3: Automatización -->
+            <div class="skill-group">
+                <h3 class="skill-group-title">Automatización</h3>
+                <div class="skill-group-icons">
+                    <div class="skill-icon">
+                        <img src="assets/images/terraform.svg" alt="Terraform" title="Terraform">
+                    </div>
+                    <div class="skill-icon">
+                        <img src="assets/images/ansible.svg" alt="Ansible" title="Ansible">
+                    </div>
+                    <div class="skill-icon">
+                        <img src="assets/images/jenkins.svg" alt="Jenkins" title="Jenkins">
+                    </div>
+                    <div class="skill-icon">
+                        <img src="assets/images/ghwf.svg" alt="GitHub Actions" title="GitHub Actions">
+                    </div>
                 </div>
-                <span>AWS</span>
             </div>
             
-            <!-- Docker -->
-            <div class="compact-skill">
-                <div class="skill-icon">
-                    <img src="assets/images/docker.svg" alt="Docker" class="h-8">
+            <!-- Grupo 4: Desarrollo -->
+            <div class="skill-group">
+                <h3 class="skill-group-title">Desarrollo</h3>
+                <div class="skill-group-icons">
+                    <div class="skill-icon">
+                        <img src="assets/images/python.svg" alt="Python" title="Python">
+                    </div>
+                    <div class="skill-icon">
+                        <img src="assets/images/bash.svg" alt="Bash" title="Bash Scripting">
+                    </div>
+                    <div class="skill-icon">
+                        <img src="assets/images/php.svg" alt="PHP" title="PHP">
+                    </div>
+                    <div class="skill-icon">
+                        <img src="assets/images/js.svg" alt="JavaScript" title="JavaScript">
+                    </div>
                 </div>
-                <span>Docker</span>
             </div>
-        </div>
-        
-        <!-- Segunda línea de habilidades -->
-        <div class="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
-            <!-- Terraform -->
-            <div class="compact-skill">
-                <div class="skill-icon">
-                    <img src="assets/images/terraform.svg" alt="Terraform" class="h-8">
-                </div>
-                <span>Terraform</span>
-            </div>
-            
-            <!-- Ansible -->
-            <div class="compact-skill">
-                <div class="skill-icon">
-                    <img src="assets/images/ansible.svg" alt="Ansible" class="h-8">
-                </div>
-                <span>Ansible</span>
-            </div>
-            
-            <!-- Python -->
-            <div class="compact-skill">
-                <div class="skill-icon">
-                    <img src="assets/images/python.svg" alt="Python" class="h-8">
-                </div>
-                <span>Python</span>
-            </div>
-            
-            <!-- Kubernetes -->
-            <div class="compact-skill">
-                <div class="skill-icon">
-                    <img src="assets/images/kubernetes.svg" alt="Kubernetes" class="h-8">
-                </div>
-                <span>Kubernetes</span>
-            </div>
-        </div>
-        
-        <!-- Botón para mostrar más -->
-        <div class="text-center mt-8">
-            <button id="show-more-skills" class="text-blue-400 hover:text-blue-300 transition">
-                Mostrar más habilidades <i class="fas fa-chevron-down ml-2"></i>
-            </button>
-        </div>
-        
-        <!-- Habilidades adicionales (ocultas inicialmente) -->
-        <div id="more-skills" class="hidden grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 max-w-3xl mx-auto">
-            <!-- Aquí puedes agregar el resto de tus habilidades -->
         </div>
     </div>
 </section>
