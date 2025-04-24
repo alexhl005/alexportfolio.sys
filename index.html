@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro Herrera | SysAdmin</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 py-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-400">AH<span class="text-white">SysAdmin</span></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-blue-400 transition">Sobre mí</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Habilidades</a>
+                <a href="#experience" class="hover:text-blue-400 transition">Experiencia</a>
+                <a href="#education" class="hover:text-blue-400 transition">Formación</a>
+                <a href="contact.html" class="hover:text-blue-400 transition">Contacto</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-700 px-4 py-2">
+            <a href="#about" class="block py-2 hover:text-blue-400">Sobre mí</a>
+            <a href="#skills" class="block py-2 hover:text-blue-400">Habilidades</a>
+            <a href="#experience" class="block py-2 hover:text-blue-400">Experiencia</a>
+            <a href="#education" class="block py-2 hover:text-blue-400">Formación</a>
+            <a href="contact.html" class="block py-2 hover:text-blue-400">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-gray-800 to-gray-900 py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Alejandro Herrera Luque</h1>
+                <h2 class="text-2xl md:text-3xl text-blue-400 mb-6">SysAdmin & Cloud Enthusiast</h2>
+                <p class="text-lg mb-8">
+                    <span id="typing-text" class="border-r-2 border-blue-400 pr-1"></span>
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact"
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition">Contactar</a>
+                    <a href="assets/pdf/cv.pdf" download
+                        class="border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-gray-900 px-6 py-3 rounded-lg transition">Descargar
+                        CV</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div class="absolute inset-0 bg-blue-400 rounded-full opacity-20 animate-pulse"></div>
+                    <img src="assets/images/profile.jpg" alt="Alejandro Herrera"
+                        class="relative z-10 w-full h-full object-cover rounded-full border-4 border-blue-400">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Sobre mí</h2>
+            <div class="max-w-3xl mx-auto bg-gray-700 p-8 rounded-lg shadow-lg">
+                <p class="text-lg mb-6">Soy una persona carismática, curiosa y dispuesto a aprender. Me encanta asumir
+                    nuevos retos, resolver problemas y encontrar soluciones, especialmente cuando tengo la libertad de
+                    trabajar de manera independiente.</p>
+                <p class="text-lg mb-6">Para mí, cada desafío es una oportunidad de crecer, y siempre doy lo mejor de
+                    mí. Mi enfoque proactivo y mi pasión por la tecnología me han permitido desarrollar habilidades
+                    sólidas en administración de sistemas y cloud computing.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                    <div class="bg-gray-600 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-400">Disponibilidad</h3>
+                        <p>Tarde/Noche</p>
+                    </div>
+                    <div class="bg-gray-600 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-400">Ubicación</h3>
+                        <p>Córdoba, España</p>
+                    </div>
+                    <div class="bg-gray-600 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-400">Contacto</h3>
+                        <p>herreraalex2005@gmail.com</p>
+                    </div>
+                    <div class="bg-gray-600 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-400">Transporte</h3>
+                        <p>Carné B, A2 - Vehículo propio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Habilidades Técnicas</h2>
+
+            <!-- Sistemas Operativos -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold mb-6 text-blue-400">Sistemas Operativos</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="skill-card">
+                        <img src="assets/images/linux.svg" alt="Linux" class="h-12 mx-auto mb-2">
+                        <p>Linux</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/images/windows.svg" alt="Windows Server" class="h-12 mx-auto mb-2">
+                        <p>Windows Server</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/images/azure.svg" alt="Azure" class="h-12 mx-auto mb-2">
+                        <p>Azure AD</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/images/synology.svg" alt="Synology" class="h-12 mx-auto mb-2 "">
+                        <p>Synology</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicios de Red -->
+            <div class=" mb-12">
+                        <h3 class="text-2xl font-semibold mb-6 text-blue-400">Servicios de Red</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="skill-card">
+                                <img src="assets/images/dhcp.svg" alt="DHCP" class="h-12 mx-auto mb-2 bg-white"
+                                    id="vector-manual">
+                                <p>DHCP</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/dns.svg" alt="DNS" class="h-12 mx-auto mb-2 bg-white"
+                                    id="vector-manual">
+                                <p>DNS</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/wireguard.svg" alt="WireGuard" class="h-12 mx-auto mb-2">
+                                <p>WireGuard</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/xmpp.svg" alt="XMPP" class="h-12 mx-auto mb-2">
+                                <p>XMPP</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Servicios WEBS -->
+                    <div class=" mb-12">
+                        <h3 class="text-2xl font-semibold mb-6 text-blue-400">Servicios Webs</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="skill-card">
+                                <img src="assets/images/apache.svg" alt="Apache" class="h-12 mx-auto mb-2">
+                                <p>Apache</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/nginx.svg" alt="Nginx" class="h-12 mx-auto mb-2">
+                                <p>Nginx</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/wp.svg" alt="Wordpress" class="h-12 mx-auto mb-2">
+                                <p>Wordpress</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/nc.svg" alt="NextCloud" class="h-12 mx-auto mb-2">
+                                <p>NextCloud</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gestion de base de datos -->
+                    <div class=" mb-12">
+                        <h3 class="text-2xl font-semibold mb-6 text-blue-400">Base de datos</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="skill-card">
+                                <img src="assets/images/mysql.svg" alt="MySql" class="h-12 mx-auto mb-2">
+                                <p>MySql</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/mariadb.svg" alt="MariaDB" class="h-12 mx-auto mb-2">
+                                <p>MariaDB</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/postgre.svg" alt="PostgreSQL" class="h-12 mx-auto mb-2">
+                                <p>PostgreSQL</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/oracle.svg" alt="Oracle" class="h-12 mx-auto mb-2">
+                                <p>Oracle</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lenguajes de Programación -->
+                    <div class="mb-12">
+                        <h3 class="text-2xl font-semibold mb-6 text-blue-400">Lenguajes de Programación</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="skill-card">
+                                <img src="assets/images/python.svg" alt="Python" class="h-12 mx-auto mb-2">
+                                <p>Python</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/php.svg" alt="PHP" class="h-12 mx-auto mb-2">
+                                <p>PHP</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/bash.svg" alt="Bash" class="h-12 mx-auto mb-2">
+                                <p>Bash Script</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/js.svg" alt="JavaScript" class="h-12 mx-auto mb-2">
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Codigo IaC - CI/CD -->
+                    <div class="mb-12">
+                        <h3 class="text-2xl font-semibold mb-6 text-blue-400">Lenguajes IaC - CI/CD</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="skill-card">
+                                <img src="assets/images/terraform.svg" alt="Terraform" class="h-12 mx-auto mb-2">
+                                <p>Terraform</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/ansible.svg" alt="Ansible" class="h-12 mx-auto mb-2">
+                                <p>Ansible</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/jenkins.svg" alt="Jenkins" class="h-12 mx-auto mb-2">
+                                <p>Jenkins</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/ghwf.svg" alt="Github-Workflows" class="h-12 mx-auto mb-2">
+                                <p>Github Workflows</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & Virtualización -->
+                    <div class="mb-12">
+                        <h3 class="text-2xl font-semibold mb-6 text-blue-400">Cloud & Virtualización</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="skill-card">
+                                <img src="assets/images/aws.svg" alt="AWS" class="h-12 mx-auto mb-2">
+                                <p>AWS</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/docker.svg" alt="Docker" class="h-12 mx-auto mb-2">
+                                <p>Docker</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/kubernetes.svg" alt="Kubernetes" class="h-12 mx-auto mb-2">
+                                <p>Kubernetes</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/proxmox.svg" alt="Proxmox" class="h-12 mx-auto mb-2">
+                                <p>Proxmox</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Monitorización y seguridad -->
+                    <div class="mb-12">
+                        <h3 class="text-2xl font-semibold mb-6 text-blue-400">Monitorización y Seguridad</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="skill-card">
+                                <img src="assets/images/zabbix.svg" alt="Zabbix" class="h-12 mx-auto mb-2"
+                                    id="vector-manual">
+                                <p>Zabbix</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/pfsense.svg" alt="PfSense" class="h-12 mx-auto mb-2 bg-white"
+                                    id="vector-manual">
+                                <p>PfSense</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/grafana.svg" alt="Grafana" class="h-12 mx-auto mb-2">
+                                <p>Grafana</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/images/prometheus.svg" alt="Prometheus" class="h-12 mx-auto mb-2">
+                                <p>Prometheus</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Experiencia Laboral</h2>
+
+            <!-- Timeline Container -->
+            <div class="relative max-w-3xl mx-auto">
+                <!-- Central Line -->
+                <div class="absolute left-1/2 w-1 h-full bg-blue-400 transform -translate-x-1/2"></div>
+
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+                    <!-- Item 1 - Bocatas Calentitos -->
+                    <div class="relative timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="bg-gray-700 p-6 rounded-lg shadow-lg w-5/12 ml-auto mr-4">
+                            <span class="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-sm mb-2">Feb
+                                2024 - Mar 2025</span>
+                            <h3 class="text-xl font-semibold mb-2">Repartidor a Domicilio</h3>
+                            <h4 class="text-blue-400 mb-4">Bocatas Calentitos</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <span class="text-blue-400 mr-2">•</span>
+                                    <span>Entrega de pedidos a domicilio</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-400 mr-2">•</span>
+                                    <span>Gestión de rutas eficientes</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-400 mr-2">•</span>
+                                    <span>Atención al cliente</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 - Grayhats -->
+                    <div class="relative timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="bg-gray-700 p-6 rounded-lg shadow-lg w-5/12 mr-auto ml-4">
+                            <span class="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-sm mb-2">Abr
+                                2023 - Jun 2023</span>
+                            <h3 class="text-xl font-semibold mb-2">Formación en Prácticas</h3>
+                            <h4 class="text-blue-400 mb-4">Grayhats</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <span class="text-blue-400 mr-2">•</span>
+                                    <span>Administración de sistemas Linux/Windows</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-400 mr-2">•</span>
+                                    <span>Gestión de servicios de red (DHCP, DNS)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-400 mr-2">•</span>
+                                    <span>Implementación de soluciones de seguridad</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 - DiagonalHosting -->
+                    <div class="relative timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="bg-gray-700 p-6 rounded-lg shadow-lg w-5/12 ml-auto mr-4">
+                            <span class="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-sm mb-2">Mar
+                                2025 - Jun 2025</span>
+                            <h3 class="text-xl font-semibold mb-2">Formación en Prácticas</h3>
+                            <h4 class="text-blue-400 mb-4">DiagonalHosting</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <span class="text-blue-400 mr-2">•</span>
+                                    <span>Gestión de servidores de hosting</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-400 mr-2">•</span>
+                                    <span>Administración de paneles Plesk/WHMCS</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-400 mr-2">•</span>
+                                    <span>Configuración de servicios web (Apache, Nginx)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Formación Académica</h2>
+
+            <div class="max-w-3xl mx-auto space-y-8">
+                <!-- Formación 1 -->
+                <div class="education-card">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-semibold">Técnico en Sistemas Microinformáticos y Redes</h3>
+                    </div>
+                </div>
+
+                <!-- Formación 2 -->
+                <div class="education-card">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-semibold">Administrador de Sistemas Informáticos en Red</h3>
+                    </div>
+                </div>
+
+                <!-- Formación 3 -->
+                <div class="education-card">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-semibold">AWS Academy Introduction to Cloud Semester 1</h3>
+                    </div>
+                </div>
+
+                <!-- Formación 4 -->
+                <div class="education-card">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-semibold">AWS Cloud Quest: Cloud Practitioner</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">¿Interesado en trabajar conmigo?</h2>
+            <div class="max-w-2xl mx-auto bg-gray-700 p-8 rounded-lg shadow-lg">
+                <p class="text-lg mb-8 text-center">Estoy disponible para oportunidades laborales y colaboraciones. ¡No
+                    dudes en contactarme!</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <a href="mailto:herreraalex2005@gmail.com" class="contact-method">
+                        <i class="fas fa-envelope text-3xl mb-3 text-blue-400"></i>
+                        <h3 class="text-xl font-semibold mb-2">Email</h3>
+                        <p>herreraalex2005@gmail.com</p>
+                    </a>
+                    <a href="tel:+34687360724" class="contact-method">
+                        <i class="fas fa-phone-alt text-3xl mb-3 text-blue-400"></i>
+                        <h3 class="text-xl font-semibold mb-2">Teléfono</h3>
+                        <p>+34 687 360 724</p>
+                    </a>
+                </div>
+                <div class="mt-8 text-center">
+                    <a href="contact.html"
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition inline-block">Formulario
+                        de Contacto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 border-t border-gray-700">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="#" class="text-2xl font-bold text-blue-400">AH<span class="text-white">SysAdmin</span></a>
+                    <p class="text-gray-400 mt-2">SysAdmin & Cloud Enthusiast</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i
+                            class="fab fa-linkedin-in text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i
+                            class="fab fa-github text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i
+                            class="fab fa-twitter text-2xl"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2023 Alejandro Herrera Luque. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
