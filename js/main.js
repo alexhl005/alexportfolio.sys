@@ -55,3 +55,38 @@ document.addEventListener('DOMContentLoaded', function () {
         yearElement.textContent = year;
     }
 });
+
+// Typing animation for hero section
+function typeWriter() {
+    const text = "Especializado en gestión de sistemas, infraestructura cloud y automatización.";
+    const element = document.getElementById("typing-text");
+    let i = 0;
+    const speed = 50; // typing speed in milliseconds
+    
+    function type() {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        } else {
+            // Remove cursor when finished
+            element.style.borderRight = "none";
+        }
+    }
+    
+    // Start typing after a short delay
+    setTimeout(type, 1000);
+}
+
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Existing code...
+    typeWriter(); // Add this line
+    
+    // Current year for footer
+    const year = new Date().getFullYear();
+    const yearElement = document.querySelector('.current-year');
+    if (yearElement) {
+        yearElement.textContent = year;
+    }
+});
